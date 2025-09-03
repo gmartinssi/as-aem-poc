@@ -1,66 +1,75 @@
-# AEM Content Package Structure
+# AEM Content Package with CLI Simulation and UI Browser
 
-This repository contains the directory structure for the proof-of-concept (PoC) AEM content package for Author Services, as proposed by the Orion development team.
+This repository contains an AEM content package structure enhanced with a CLI simulation tool and a web-based UI browser.
 
-## Directory Tree
+## Quick Start
 
-```
-.
-├── jcr_root/
-│   └── content/
-│       ├── dam/
-│       │   └── wiley/
-│       │       └── author-services/
-│       │           ├── assets/
-│       │           │   ├── images/
-│       │           │   ├── pdfs/
-│       │           │   └── videos/
-│       │           └── content-fragments/
-│       │               ├── dropdown-components/
-│       │               ├── interactive-tools/
-│       │               ├── pdf-resources/
-│       │               ├── video-resources/
-│       │               └── webinar-events/
-│       └── wiley/
-│           └── author-services/
-│               └── wiley_aem.json
-├── aem-cli/
-│   ├── bin/
-│   ├── lib/
-│   ├── packages/
-│   ├── config/
-│   └── package.json
-└── aem-ui/
-    ├── css/
-    ├── js/
-    ├── assets/
-    └── index.html
+### Option 1: Automated Setup and Run
+```bash
+./run-demo.sh
 ```
 
-## AEM CLI Simulation
+This will:
+1. Set up the AEM CLI with all dependencies
+2. Install the content package
+3. Prompt you to start the web UI
 
-This repository has been enhanced with an AEM CLI simulation tool that allows you to interact with the content package through command-line commands.
+### Option 2: Setup Only
+```bash
+./full-demo.sh
+```
 
-### Features
+This will:
+1. Set up the AEM CLI with all dependencies
+2. Install the content package
+3. Provide instructions for starting the UI manually
 
-- Install content packages
-- List content in the repository
-- Get specific content as JSON
-- Export content to files
-- View information about installed content
+### Option 3: Manual Setup
 
-### Usage
+#### AEM CLI
 
-Navigate to the `aem-cli` directory and run:
+1. Navigate to the AEM CLI directory:
+   ```bash
+   cd aem-cli
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Install the content package:
+   ```bash
+   node bin/aem-cli.js install
+   ```
+
+4. Verify installation:
+   ```bash
+   node bin/aem-cli.js info
+   ```
+
+#### Web UI
+
+1. Start the UI server:
+   ```bash
+   ./start-ui.sh
+   ```
+   
+   Or manually:
+   ```bash
+   cd aem-ui
+   python3 -m http.server 8000
+   ```
+
+2. Open your browser and navigate to http://localhost:8000
+
+## AEM CLI Commands
 
 ```bash
-# Install dependencies
-npm install
-
-# Install the content package
+# Install content package
 node bin/aem-cli.js install
 
-# List content
+# List content in repository
 node bin/aem-cli.js list -p /content
 
 # Get specific content
@@ -69,35 +78,51 @@ node bin/aem-cli.js get -p /content/wiley/author-services/wiley_aem.json
 # Export content
 node bin/aem-cli.js export -p /content/wiley/author-services -o output.json
 
-# Show info
+# Show package information
 node bin/aem-cli.js info
 ```
 
-See [AEM_CLI_CONVERSION.md](AEM_CLI_CONVERSION.md) for details on how this conversion was implemented.
+## Available Scripts
 
-## AEM UI Browser
+- `./run-demo.sh` - Complete automated setup and run
+- `./full-demo.sh` - Setup only, with instructions
+- `./start-ui.sh` - Start the web UI server
+- `./aem-cli-integration-demo.sh` - Show integration between UI and CLI
 
-A web-based user interface has been created to browse the content managed by the AEM CLI.
+## Project Structure
 
-### Features
+```
+├── aem-cli/              # AEM CLI simulation tool
+│   ├── bin/              # Executable scripts
+│   ├── lib/              # Library functions
+│   ├── packages/         # Content packages
+│   └── config/           # Configuration files
+├── aem-ui/               # Web-based UI browser
+│   ├── css/              # Stylesheets
+│   ├── js/               # JavaScript files
+│   └── index.html        # Main HTML file
+├── jcr_root/             # Original AEM content structure
+└── README.md             # Project documentation
+```
 
+## Requirements
+
+- Node.js (for AEM CLI)
+- Python 3 (for UI server)
+- npm (Node package manager)
+
+## Features
+
+### AEM CLI Simulation
+- Install content packages
+- List content in the repository
+- Get specific content as JSON
+- Export content to files
+- View information about installed content
+
+### Web UI Browser
 - Master-detail layout with sidebar navigation
-- Content browsing for different categories
-- Responsive design
+- Responsive design that works on desktop and mobile
+- Interactive content browsing
 - Package information display
-
-### Usage
-
-Open `aem-ui/index.html` in a web browser to use the interface.
-
-## Support
-
-For any questions or issues, please contact:
-
-Gabriel Martins Silva - gmartinssi@wiley.com
-
-## References
-
-- [AEM Core WCM Components](https://github.com/adobe/aem-core-wcm-components)
-- [Author Services Site](https://github.com/wiley/as-site)
-- [Mistica Design System](https://mistica-web.vercel.app/?path=/story/layout-master-detail-layout--default)
+- Loading states and user feedback
