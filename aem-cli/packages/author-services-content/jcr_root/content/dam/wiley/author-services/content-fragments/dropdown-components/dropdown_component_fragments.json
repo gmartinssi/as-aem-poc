@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Dropdown Component - Content Fragment",
+  "description": "JSON data for an AEM Content Fragment representing a tool with a large dropdown menu.",
+  "dropdownComponent": {
+    "model": "/conf/wiley/settings/dam/cfm/models/dropdown-component",
+    "componentName": "Author Compliance Tool Journal Selector",
+    "componentDescription": "An interactive dropdown menu allowing authors to select from over 800 Wiley journals to check funder and institutional open access compliance.",
+    "dataSource": "Wiley Journals Database",
+    "itemCount": 1800,
+    "category": "compliance"
+  }
+}

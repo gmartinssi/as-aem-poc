@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Video Resource - Content Fragment",
+  "description": "JSON data for an AEM Content Fragment representing an embedded video.",
+  "videoResource": {
+    "model": "/conf/wiley/settings/dam/cfm/models/video-resource",
+    "videoName": "Open Access at Wiley",
+    "videoDescription": "Educational video explaining the various open access publishing options available at Wiley.",
+    "platform": "brightcove",
+    "videoId": "6234567890",
+    "accountId": "1234567890",
+    "playerId": "default",
+    "durationSeconds": 180,
+    "thumbnailPath": "/content/dam/wiley/author-services/images/open-access-video-thumb.jpg",
+    "category": "open-access"
+  }
+}

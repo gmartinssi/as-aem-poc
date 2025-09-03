@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PDF Resources - Content Fragments",
+  "description": "JSON data for AEM Content Fragments representing downloadable PDF resources.",
+  "pdfResources": [
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/pdf-resource",
+      "resourceName": "License Signing Guide",
+      "resourceDescription": "Step-by-step guide for signing your article license in Author Services.",
+      "fileReference": "/content/dam/wiley/author-services/pdfs/license-signing-guide.pdf",
+      "category": "licensing"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/pdf-resource",
+      "resourceName": "Co-Author Letter Template",
+      "resourceDescription": "Template letter for obtaining co-author consent for licensing agreements.",
+      "fileReference": "/content/dam/wiley/author-services/pdfs/co-author-letter-template.pdf",
+      "category": "licensing"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/pdf-resource",
+      "resourceName": "Post-Acceptance Workflow Infographic",
+      "resourceDescription": "Visual guide to the publication process after article acceptance.",
+      "fileReference": "/content/dam/wiley/author-services/infographics/post-acceptance-workflow.pdf",
+      "category": "publication"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/pdf-resource",
+      "resourceName": "Authorship Change Form",
+      "resourceDescription": "Form for requesting changes to the author list on a submitted article.",
+      "fileReference": "/content/dam/wiley/author-services/forms/authorship-change-form.pdf",
+      "category": "publication"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/pdf-resource",
+      "resourceName": "Social Media Promotion Infographic",
+      "resourceDescription": "Tips and strategies for promoting published research on social media platforms.",
+      "fileReference": "/content/dam/wiley/author-services/infographics/social-media-infographic.pdf",
+      "category": "promotion"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/pdf-resource",
+      "resourceName": "Ethics Guidelines (Chinese)",
+      "resourceDescription": "A complete Chinese translation of the Wiley publishing ethics guidelines.",
+      "fileReference": "/content/dam/wiley/author-services/pdfs/ethics-guidelines-zh.pdf",
+      "category": "ethics"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/pdf-resource",
+      "resourceName": "Journal and Article Metrics Guide",
+      "resourceDescription": "A comprehensive guide to understanding and interpreting various journal and article-level metrics.",
+      "fileReference": "/content/dam/wiley/author-services/pdfs/journal-metrics-guide.pdf",
+      "category": "journal-selection"
+    }
+  ]
+}

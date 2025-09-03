@@ -1,0 +1,15 @@
+{
+  "repository": {
+    "name": "AEM Content Package Simulation",
+    "version": "1.0.0",
+    "contentRoot": "packages/author-services-content/jcr_root"
+  },
+  "cli": {
+    "name": "aem-cli",
+    "version": "1.0.0"
+  },
+  "content": {
+    "packageName": "author-services-content",
+    "packageDescription": "Wiley Author Services Content Package"
+  }
+}

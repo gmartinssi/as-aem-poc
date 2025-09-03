@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Webinar Events - Content Fragments",
+  "description": "JSON data for AEM Content Fragments based on the 'webinarEvent' model.",
+  "webinarEvents": [
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/webinar-event",
+      "webinarTitle": "Online panel discussion - Hear from your peers on how to manage open access complexity",
+      "webinarDescription": "Join our panel of experts to discuss the challenges and solutions for managing open access publishing in today's complex landscape.",
+      "webinarDate": "2025-09-15",
+      "registrationUrl": "https://attendee.gotowebinar.com/register/1234567890123456789",
+      "category": "open-access",
+      "region": "global",
+      "status": "upcoming",
+      "speakers": []
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/webinar-event",
+      "webinarTitle": "The role and impact of public policies - OSTP and other open research mandates",
+      "webinarDescription": "Explore the impact of recent open research mandates, including the OSTP memo, on the future of scholarly publishing.",
+      "webinarDate": "2025-10-22",
+      "registrationUrl": "https://attendee.gotowebinar.com/register/2345678901234567890",
+      "category": "open-access",
+      "region": "americas",
+      "status": "upcoming",
+      "speakers": []
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/webinar-event",
+      "webinarTitle": "The open access advantage - How open access improves your impact",
+      "webinarDescription": "Learn how publishing your work open access can significantly increase its visibility, citation rate, and overall impact.",
+      "webinarDate": "2025-11-18",
+      "registrationUrl": "https://attendee.gotowebinar.com/register/3456789012345678901",
+      "category": "open-access",
+      "region": "global",
+      "status": "upcoming",
+      "speakers": []
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/webinar-event",
+      "webinarTitle": "How to improve open access management across different publishers",
+      "webinarDescription": "A practical guide for librarians on streamlining open access workflows and managing agreements with multiple publishers.",
+      "webinarDate": "2025-09-28",
+      "registrationUrl": "https://attendee.gotowebinar.com/register/4567890123456789012",
+      "category": "librarians",
+      "region": "europe",
+      "status": "upcoming",
+      "speakers": []
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/webinar-event",
+      "webinarTitle": "Understanding the OA output of your institution",
+      "webinarDescription": "Discover tools and techniques for tracking and analyzing your institution's open access research output to inform your strategy.",
+      "webinarDate": "2025-10-19",
+      "registrationUrl": "https://attendee.gotowebinar.com/register/5678901234567890123",
+      "category": "librarians",
+      "region": "global",
+      "status": "upcoming",
+      "speakers": []
+    }
+  ]
+}

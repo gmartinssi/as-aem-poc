@@ -1,0 +1,412 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Wiley Author Services - Navigation View Structure",
+  "description": "Schema for AEM content structure using navigationView and fragmentView, validated and completed with all AEM component fields.",
+  "navigationView": [
+    {
+      "category": {
+        "title": "Journal Authors",
+        "description": "Your research is driving a brighter future by providing answers to the challenges of today. Publishing should be rewarding not frustrating. Only the best work is accepted by our journals, but we make everything else easy. Click into the publication journey so we can help you along."
+      },
+      "fragmentView": [
+        {
+          "title": "Overview",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "Your research is driving a brighter future by providing answers to the challenges of today. Publishing should be rewarding not frustrating. Only the best work is accepted by our journals, but we make everything else easy. Click into the publication journey so we can help you along.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "table_of_contents",
+              "aemComponent": "core/wcm/components/list/v4/list",
+              "data": {
+                "items": [
+                  { "title": "Find a Journal", "link": "#find-a-journal" },
+                  { "title": "Prepare", "link": "#prepare" },
+                  { "title": "Submission & Peer Review", "link": "#submission-peer-review" },
+                  { "title": "Licensing", "link": "#licensing" },
+                  { "title": "Open Access", "link": "#open-access" },
+                  { "title": "Publication", "link": "#publication" },
+                  { "title": "Promote", "link": "#promote" }
+                ],
+                "listFrom": "static",
+                "showDescription": false,
+                "linkItems": true
+              }
+            }
+          ]
+        },
+        {
+          "title": "Find a Journal",
+          "id": "find-a-journal",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "Working on your next manuscript? Use one of the options below to find the perfect journal for your work.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "tool",
+              "aemComponent": "core/wcm/components/experiencefragment/v2/experiencefragment",
+              "data": {
+                "name": "Journal Finder",
+                "description": "The Journal Finder is a powerful tool that lets you filter based on subject and topic areas to compare journal metrics side-by-side. Search directly across 1800+ journals published by Wiley.",
+                "externalUrl": "https://www.wiley.com/publish/journal-finder",
+                "fragmentVariationPath": "/content/experience-fragments/wiley/tools/journal-finder"
+              }
+            },
+            {
+              "type": "tool",
+              "aemComponent": "core/wcm/components/experiencefragment/v2/experiencefragment",
+              "data": {
+                "name": "Journal Matching Tool",
+                "description": "If you already have a title and abstract for your article, you can use our journal matching tool to find journals that match your manuscript content.",
+                "externalUrl": "https://authorservices.wiley.com/journal-match/index.html",
+                "fragmentVariationPath": "/content/experience-fragments/wiley/tools/journal-matching-tool"
+              }
+            },
+            {
+              "type": "tool",
+              "aemComponent": "core/wcm/components/experiencefragment/v2/experiencefragment",
+              "data": {
+                "name": "Journal Recommendation Service",
+                "description": "If you are looking for more formal support with finding the right journal, try our Journal Recommendation service. You will receive 3-5 curated recommendations.",
+                "externalUrl": "https://wileyeditingservices.com/en/journal-recommendation",
+                "fragmentVariationPath": "/content/experience-fragments/wiley/tools/journal-recommendation-service"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Prepare",
+          "id": "prepare",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "We're here to support you throughout manuscript preparation, from writing to submission. For the best chance of acceptance, follow your journal's author guidelines and review our preparation resources before you start.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "tool",
+              "aemComponent": "core/wcm/components/experiencefragment/v2/experiencefragment",
+              "data": {
+                "name": "Manuscript Language Checker",
+                "description": "Receive a free language quality score and recommendation for the best service to get your manuscript ready for submission with our Manuscript Language Checker!",
+                "externalUrl": "https://wileyeditingservices.com/en/manuscript-language-checker",
+                "fragmentVariationPath": "/content/experience-fragments/wiley/tools/manuscript-language-checker"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Submission & Peer Review",
+          "id": "submission-peer-review",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "Review your chosen journal's submission requirements. Register for an ORCID iD and associate it to your manuscript when you submit.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "tool",
+              "aemComponent": "core/wcm/components/experiencefragment/v2/experiencefragment",
+              "data": {
+                "name": "Wiley Under Review (via Authorea)",
+                "description": "Showcase your work to the global research community as a preprint while it is under review at a number of Wiley journals.",
+                "externalUrl": "https://www.authorea.com/inst/20386-wiley-open-research",
+                "fragmentVariationPath": "/content/experience-fragments/wiley/tools/authorea-integration"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Licensing",
+          "id": "licensing",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "A signed Author Agreement is required by Wiley for all submitted article types before your article can be published. For subscription articles, you will either transfer copyright to Wiley with a Copyright Transfer Agreement (CTA) or grant Wiley an exclusive license to the copyright with an Exclusive License Agreement (ELA).",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "pdf",
+              "aemComponent": "core/wcm/components/download/v2/download",
+              "data": {
+                "title": "How to sign your article license",
+                "description": "A guide to the license signing process.",
+                "fileReference": "/content/dam/wiley/author-services/pdfs/license-signing-guide.pdf",
+                "displaySize": true,
+                "displayFormat": true
+              }
+            },
+            {
+              "type": "pdf",
+              "aemComponent": "core/wcm/components/download/v2/download",
+              "data": {
+                "title": "Co-Author Letter Template",
+                "description": "Template for obtaining co-author consent.",
+                "fileReference": "/content/dam/wiley/author-services/pdfs/co-author-letter-template.pdf",
+                "displaySize": true,
+                "displayFormat": true
+              }
+            }
+          ]
+        },
+        {
+          "title": "Open Access",
+          "id": "open-access",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "By removing the barriers to published research, open access makes your research findings available to everyone. Open access articles are freely available to read, download and share.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "video",
+              "aemComponent": "core/wcm/components/video/v1/video",
+              "data": {
+                "title": "Open Access at Wiley",
+                "description": "Educational video explaining open access publishing options at Wiley.",
+                "platform": "brightcove",
+                "videoId": "6234567890",
+                "accountId": "1234567890",
+                "playerId": "default",
+                "src": "//players.brightcove.net/1234567890/default/index.html?videoId=6234567890",
+                "autoplay": false,
+                "controls": true
+              }
+            },
+            {
+              "type": "tool",
+              "aemComponent": "core/wcm/components/experiencefragment/v2/experiencefragment",
+              "data": {
+                "name": "Author Compliance Tool",
+                "description": "Use our Author Compliance Tool to verify that your chosen Wiley journal meets your funder's or institution's open access requirements.",
+                "externalUrl": "https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/author-compliance-tool.html",
+                "fragmentVariationPath": "/content/experience-fragments/wiley/tools/author-compliance-tool"
+              }
+            },
+            {
+              "type": "excel",
+              "aemComponent": "core/wcm/components/download/v2/download",
+              "data": {
+                "title": "APC Pricing Database",
+                "description": "Article Publication Charges for all Wiley open access journals.",
+                "fileReference": "/content/dam/wiley/author-services/excel/apc-pricing-database.xlsx",
+                "displaySize": true,
+                "displayFormat": true
+              }
+            }
+          ]
+        },
+        {
+          "title": "Publication",
+          "id": "publication",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "Your article has been accepted for publication. Once accepted, we publish your article as quickly as possible. There are a few things the corresponding author needs to do to keep this process moving.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "pdf",
+              "aemComponent": "core/wcm/components/download/v2/download",
+              "data": {
+                "title": "Post-Acceptance Workflow Infographic",
+                "description": "Visual guide to the publication process after article acceptance.",
+                "fileReference": "/content/dam/wiley/author-services/infographics/post-acceptance-workflow.pdf",
+                "displaySize": true,
+                "displayFormat": true
+              }
+            },
+            {
+              "type": "excel",
+              "aemComponent": "core/wcm/components/download/v2/download",
+              "data": {
+                "title": "Wiley Reprints Journal List",
+                "description": "Complete list of Wiley journals offering reprints.",
+                "fileReference": "/content/dam/wiley/author-services/excel/wiley-reprints-journal-list.xlsx",
+                "displaySize": true,
+                "displayFormat": true
+              }
+            }
+          ]
+        },
+        {
+          "title": "Promote",
+          "id": "promote",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "As a publisher, we use smart strategies to make sure your article gets discovered and noticed on Wiley Online Library. As an author there are many ways you can actively engage with the research community to increase the visibility and impact of your published research.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "pdf",
+              "aemComponent": "core/wcm/components/download/v2/download",
+              "data": {
+                "title": "Social Media Promotion Infographic",
+                "description": "Tips and strategies for promoting research on social media.",
+                "fileReference": "/content/dam/wiley/author-services/infographics/social-media-infographic.pdf",
+                "displaySize": true,
+                "displayFormat": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": {
+        "title": "Reviewers",
+        "description": "Resources and guidelines for journal and book reviewers"
+      },
+      "fragmentView": [
+        {
+          "title": "Overview",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "At Wiley we believe that peer review is the foundation for safeguarding the quality and integrity of scientific and scholarly research. We want to do everything we can to support reviewers and to recognize their contribution.",
+                "textIsRich": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": {
+        "title": "Ethics Guidelines",
+        "description": "Best Practice Guidelines on Research Integrity and Publishing Ethics"
+      },
+      "fragmentView": [
+        {
+          "title": "Overview",
+          "contentComponents": [
+            {
+              "type": "paragraph",
+              "aemComponent": "core/wcm/components/text/v2/text",
+              "data": {
+                "text": "These guidelines present a further update to the Wiley publishing ethics guidelines first published in 2006 and revised in 2014. Our aim for these guidelines remains to support all those involved in scholarly publishing with a summary of best practice guidance.",
+                "textIsRich": true
+              }
+            },
+            {
+              "type": "table_of_contents",
+              "aemComponent": "core/wcm/components/list/v4/list",
+              "data": {
+                "items": [
+                  { "title": "Academic debate" },
+                  { "title": "Appeals" },
+                  { "title": "Artificial Intelligence" },
+                  { "title": "Authorship" },
+                  { "title": "Citations" },
+                  { "title": "Commercial considerations and editorial independence" },
+                  { "title": "Conflicts of interest" },
+                  { "title": "Copyright and intellectual property" },
+                  { "title": "Corrections, expressions of concern, retractions, and withdrawals" },
+                  { "title": "Data and reporting guidelines" },
+                  { "title": "Diversity, Equity and Inclusion" },
+                  { "title": "Fabrication, falsification, and image manipulation" },
+                  { "title": "Hazardous materials, risks, and biosecurity" },
+                  { "title": "Investigation of questionable research practices" },
+                  { "title": "Peer review" },
+                  { "title": "Plagiarism, duplicate/redundant publication, text recycling, and translations" },
+                  { "title": "Preprints" },
+                  { "title": "Research ethics" },
+                  { "title": "Research funding" },
+                  { "title": "Sanctions" },
+                  { "title": "Systemic manipulation of the publication process" }
+                ],
+                "listFrom": "static",
+                "showDescription": false,
+                "linkItems": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": {
+        "title": "Webinars and Events",
+        "description": "Engaging webinars and events tailored to the needs of researchers, authors, and librarians."
+      },
+      "fragmentView": [
+        {
+          "title": "Upcoming Events",
+          "contentComponents": [
+            {
+              "type": "drawer",
+              "aemComponent": "core/wcm/components/contentfragment/v1/contentfragment",
+              "data": {
+                "category": "Open Access",
+                "fragmentPath": "/content/dam/wiley/content-fragments/webinars/open-access-events",
+                "events": [
+                  {
+                    "title": "Online panel discussion - Hear from your peers on how to manage open access complexity",
+                    "date": "2025-09-15"
+                  },
+                  {
+                    "title": "The role and impact of public policies - OSTP and other open research mandates",
+                    "date": "2025-10-22"
+                  },
+                  {
+                    "title": "The open access advantage - How open access improves your impact",
+                    "date": "2025-11-18"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "drawer",
+              "aemComponent": "core/wcm/components/contentfragment/v1/contentfragment",
+              "data": {
+                "category": "Events for Librarians",
+                "fragmentPath": "/content/dam/wiley/content-fragments/webinars/librarian-events",
+                "events": [
+                  {
+                    "title": "How to improve open access management across different publishers",
+                    "date": "2025-09-28"
+                  },
+                  {
+                    "title": "Understanding the OA output of your institution",
+                    "date": "2025-10-19"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

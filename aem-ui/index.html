@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEM CLI Content Browser</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="layout-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>AEM CLI Content Browser</h1>
+            <div class="header-controls">
+                <button id="refresh-btn" class="btn btn-primary">Refresh Content</button>
+                <button id="info-btn" class="btn btn-secondary">Package Info</button>
+            </div>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar-nav">
+                <div class="nav-header">
+                    <h2>Navigation</h2>
+                </div>
+                <ul id="nav-list" class="nav-list">
+                    <!-- Navigation items will be populated by JavaScript -->
+                </ul>
+            </nav>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <div class="content-header">
+                    <h2 id="content-title">Content Overview</h2>
+                </div>
+                <div id="content-area" class="content-area">
+                    <div class="loading" id="loading">
+                        <p>Loading content...</p>
+                    </div>
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </main>
+        </div>
+
+        <!-- Status Bar -->
+        <footer class="status-bar">
+            <div id="status-message">Ready</div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

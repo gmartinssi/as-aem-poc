@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Interactive Tools - Content Fragments",
+  "description": "JSON data for AEM Content Fragments based on the 'interactiveTool' model.",
+  "interactiveTools": [
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/interactive-tool",
+      "toolName": "Journal Finder",
+      "toolDescription": "The Journal Finder is a powerful tool that lets you filter based on subject and topic areas to compare journal metrics side-by-side. Search directly across 1800+ journals published by Wiley.",
+      "toolUrl": "https://www.wiley.com/publish/journal-finder",
+      "category": "finder",
+      "integrationPlatform": "Wiley Online Library"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/interactive-tool",
+      "toolName": "Journal Matching Tool",
+      "toolDescription": "If you already have a title and abstract for your article, you can use our journal matching tool to find journals that match your manuscript content.",
+      "toolUrl": "https://authorservices.wiley.com/journal-match/index.html",
+      "category": "finder",
+      "integrationPlatform": ""
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/interactive-tool",
+      "toolName": "Journal Recommendation Service",
+      "toolDescription": "If you are looking for more formal support with finding the right journal, try our Journal Recommendation service. You will receive 3-5 curated recommendations.",
+      "toolUrl": "https://wileyeditingservices.com/en/journal-recommendation",
+      "category": "recommendation",
+      "integrationPlatform": "Wiley Editing Services"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/interactive-tool",
+      "toolName": "Manuscript Language Checker",
+      "toolDescription": "Receive a free language quality score and recommendation for the best service to get your manuscript ready for submission with our Manuscript Language Checker!",
+      "toolUrl": "https://wileyeditingservices.com/en/manuscript-language-checker",
+      "category": "language",
+      "integrationPlatform": "Wiley Editing Services"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/interactive-tool",
+      "toolName": "Wiley Under Review (via Authorea)",
+      "toolDescription": "Showcase your work to the global research community as a preprint while it is under review at a number of Wiley journals.",
+      "toolUrl": "https://www.authorea.com/inst/20386-wiley-open-research",
+      "category": "publishing",
+      "integrationPlatform": "Authorea"
+    },
+    {
+      "model": "/conf/wiley/settings/dam/cfm/models/interactive-tool",
+      "toolName": "Author Compliance Tool",
+      "toolDescription": "Use our Author Compliance Tool to verify that your chosen Wiley journal meets your funder's or institution's open access requirements.",
+      "toolUrl": "https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/author-compliance-tool.html",
+      "category": "compliance",
+      "integrationPlatform": ""
+    }
+  ]
+}

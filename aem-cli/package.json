@@ -1,0 +1,28 @@
+{
+  "name": "aem-cli-simulation",
+  "version": "1.0.0",
+  "description": "AEM CLI Simulation Tool for Content Package Management",
+  "main": "bin/aem-cli.js",
+  "bin": {
+    "aem-cli": "bin/aem-cli.js"
+  },
+  "scripts": {
+    "start": "node bin/aem-cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aem",
+    "cli",
+    "content-package",
+    "simulation"
+  ],
+  "author": "Gabriel Martins Silva",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.5.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "commonjs"
+}
